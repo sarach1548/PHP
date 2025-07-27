@@ -1,0 +1,227 @@
+/* Reset בסיסי */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* עיצוב כללי */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    padding: 0px !important;
+    direction: rtl;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* כותרות */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+/* טפסים */
+form {
+    max-width: 400px;
+    margin: 0 auto 0px auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* .btn {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+}
+.btn:hover {
+    background-color: #388e3c;
+} */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+/* הודעות שגיאה */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* רשימת משימות */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* כפתורים במשימות */
+li button {
+    margin-right: 5px;
+    width: auto;
+}
+
+li button[name="delete"] {
+    background-color: #e53935;
+}
+li button[name="delete"]:hover {
+    background-color: #c62828;
+}
+
+li button[name="toggle"] {
+    background-color: #cfd8dc;
+    color: black;
+}
+li button[name="toggle"].done {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* קישורים */
+a {
+    color: #2196f3;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* התנתקות */
+.logout {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+li {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+li form {
+    margin: 0;
+    display: inline;
+}
+
+li button[name="delete"] {
+    background-color: #e53935;
+}
+
+li button[name="delete"]:hover {
+    background-color: #c62828;
+}
+
+li button[name="toggle"] {
+    background-color: #cfd8dc;
+    color: black;
+}
+
+li button[name="toggle"].done {
+    background-color: #4caf50;
+    color: white;
+} */
